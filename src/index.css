@@ -1,0 +1,153 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+.containerMenu{
+  position: fixed;
+  width:200px;
+
+  background: white;
+  box-shadow: inset 1px 1px 5px rgb(180, 180, 180);
+ height: 100%;
+  transition: 400ms;
+   
+ 
+  
+}
+.containerMenuActive{
+  position: fixed;
+  width: 64px;
+
+  background: white;
+  box-shadow: inset 2px 2px 2px white;
+  border-radius:10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  top: 0;
+  left: 0;
+  height: 100%;
+  transition: 400ms;
+  
+}
+.menu{
+  
+
+ padding: 0;
+ margin-left: 1px;
+ 
+ 
+}
+body{
+background-color:aliceblue;
+}
+.items{
+
+
+align-items:center; 
+padding: 10px;
+margin-bottom:  15px;
+border-left: 4px transparent;
+
+
+}
+.itemTitle{
+  font-size: 18px;
+  font-weight: 500;
+display: block;
+  
+}
+.itemTitleactive{
+  display: none;
+}
+
+.iconActive{
+  color: red;
+}
+.icon{
+  color: black;
+}
+.closeMenu{
+  position: absolute;
+  z-index: 900;
+  right: -8px;
+  top: 80px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.557);
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  cursor: pointer;
+  transition: 200ms ;
+
+
+}
+.closeMenu:hover{
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.557);
+}
+.link{
+  display: flex;
+  gap: 30px;
+  text-decoration: none;
+  color: black;
+  align-items: center;
+  cursor: pointer;
+  
+  
+}
+.linkActive{
+  color: red;
+  display: flex;
+  gap: 30px;
+  text-decoration: none;
+
+  align-items: center;
+  cursor: pointer;
+}
+
+.contenedorPrincipal{
+  display: grid;
+  grid-template-columns: 64px 1fr; 
+  gap: 10px; 
+  transition: 500ms;
+}
+.contenedorPrincipalActivo{
+  display: grid;
+  grid-template-columns: 200px 1fr; 
+  gap: 10px; 
+  transition: 500ms;
+}
+table{
+  border-collapse: collapse;
+  border-spacing: 0;
+ width: 100%;
+  border: 1px solid #ddd;
+
+
+}
+thead , tfoot{
+  background: #333;
+  
+  color: white;
+  padding: 10px;
+  width: 10px;
+}
+
+th{
+
+text-align: justify;
+padding: 10px;
+
+}
+tr:nth-child(even){
+  background: #f2f2f2;
+}
+td{
+  padding: 10px;
+}
